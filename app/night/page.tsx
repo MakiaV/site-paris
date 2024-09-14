@@ -1,7 +1,7 @@
-export default function Home() {
+const ParisNight = () => {
 	return (
-		<main className="pt-32 px-24">
-			<h1>Site Paris Day</h1>
+		<div className="bg-[#18181B] text-white pt-32 px-24">
+			<h1>Site Paris Night</h1>
 			<p className="text-justify">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
 				laborum quos animi in maxime quibusdam, vel ad eveniet inventore
@@ -192,6 +192,8 @@ export default function Home() {
 				officiis? Voluptatum temporibus laboriosam eos, non qui odio
 				recusandae cupiditate facere maxime aliquid necessitatibus.
 			</p>
-		</main>
+		</div>
 	);
-}
+};
+
+export default ParisNight;
