@@ -1,3 +1,5 @@
+"use client";
+
 import logo from "@/app/images/paris-1.png";
 import { MoonStar } from "lucide-react";
 import Image from "next/image";
@@ -10,11 +12,11 @@ const DayNavbar = () => {
 				<Image src={logo} alt="logo" width={50} height={50} />
 			</Link>
 			<div className="space-x-8">
+				<Link href="/discover">Découvir Paris</Link>
 				<Link href="/events">Evènements</Link>
 				<Link href="/todos">À faire</Link>
 				<Link href="/accommodation">Où séjourner</Link>
-				<Link href="/night/eat-and-drink">Où manger</Link>
-				<Link href="/night/party">Où sortir</Link>
+				<Link href="/eat-and-drink">Manger et boire</Link>
 			</div>
 
 			<Link href="/night">
