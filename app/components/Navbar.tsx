@@ -8,7 +8,7 @@ const Navbar = () => {
 	const pathname = usePathname();
 
 	return (
-		<div>
+		<div className="z-50">
 			{pathname.includes("/night") ? <NightNavbar /> : <DayNavbar />}
 		</div>
 	);

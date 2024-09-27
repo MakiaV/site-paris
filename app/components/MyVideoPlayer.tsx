@@ -1,9 +1,10 @@
 "use client";
 import ReactPlayer from "react-player";
+import { MyTypewriterEffect } from "./parisNight/MyTypeWriter";
 
 const MyVideoPlayer = () => {
 	return (
-		<div className="">
+		<div className="h-[100vh] w-[100vw] relative">
 			<ReactPlayer
 				// url="https://www.youtube.com/watch?v=REDVbTQxMXo"
 				url="https://www.youtube.com/watch?v=wbVdswcyl6I"
@@ -12,12 +13,12 @@ const MyVideoPlayer = () => {
 				muted
 				playing
 				loop
-				width="100%"
+				width="100vw"
+				// height="100vh"
 				height="56vw"
-				className="pointer-events-none"
+				className="pointer-events-none top-0 left-0 absolute p-0"
 			/>
-
-			{/* <div className="absolute  inset-0 bg-black/20 border border-green-400"></div> */}
+			<MyTypewriterEffect />
 		</div>
 	);
 };
