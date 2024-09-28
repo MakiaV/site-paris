@@ -15,7 +15,7 @@ export function MyTypewriterEffect() {
 		},
 	];
 	return (
-		<div className=" text-white absolute w-full top-0 left-0 h-full flex flex-col justify-center items-center ">
+		<div className=" text-white absolute w-full top-0 left-0 h-full flex flex-col justify-center items-center">
 			<TypewriterEffect words={words} />
 			<div className="mt-8">
 				<Link

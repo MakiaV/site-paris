@@ -4,10 +4,6 @@ import Link from "next/link";
 import img1 from "@/app/images/1.jpg";
 import img2 from "@/app/images/2.jpg";
 import img3 from "@/app/images/3.jpg";
-import img4 from "@/app/images/4.jpg";
-import img5 from "@/app/images/5.jpg";
-import img6 from "@/app/images/6.jpg";
-import img7 from "@/app/images/7.jpg";
 
 import Image, { StaticImageData } from "next/image";
 
@@ -64,35 +60,6 @@ const items = [
 		header: <Skeleton src={img3} />,
 
 		link: "/night",
-	},
-	{
-		title: "The Power of Communication",
-		description:
-			"Understand the impact of effective communication in our lives.",
-		header: <Skeleton src={img4} />,
-
-		link: "/todos",
-	},
-	{
-		title: "The Pursuit of Knowledge",
-		description: "Join the quest for understanding and enlightenment.",
-		header: <Skeleton src={img5} />,
-
-		link: "/events",
-	},
-	{
-		title: "The Joy of Creation",
-		description: "Experience the thrill of bringing ideas to life.",
-		header: <Skeleton src={img6} />,
-
-		link: "/accommodation",
-	},
-	{
-		title: "The Spirit of Adventure",
-		description: "Embark on exciting journeys and thrilling discoveries.",
-		header: <Skeleton src={img7} />,
-
-		link: "/eat-and-drink",
 	},
 ];
 

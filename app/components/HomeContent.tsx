@@ -2,11 +2,12 @@ import expoImg from "@/app/images/expo.jpg";
 import expoNightImg from "@/app/images/expoNight.jpg";
 import Image from "next/image";
 import Link from "next/link";
-import MyGrid from "./customGrid";
+import MyGrid from "./MyGrid";
+import SubCarousel from "./SubCarousel";
 
 const HomeContent = ({ theme }: { theme: "light" | "dark" }) => {
 	return (
-		<div className="px-24 py-12">
+		<div className="px-24 2xl:px-48 py-12">
 			<div
 				className={
 					theme === "light"
@@ -46,6 +47,7 @@ const HomeContent = ({ theme }: { theme: "light" | "dark" }) => {
 				</div>
 			</div>
 			<MyGrid theme={theme} />
+			<SubCarousel theme={theme} />
 		</div>
 	);
 };
