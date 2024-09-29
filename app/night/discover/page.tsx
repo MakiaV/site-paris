@@ -19,7 +19,7 @@ const DiscoverNight = () => {
 						Votre guide pour découvrir la magie de Paris
 					</h1>
 					<h2 className="text-xl font-bold my-8 2xl:my-12">
-						De l'élégance des monuments historiques aux rues
+						De l&apos;élégance des monuments historiques aux rues
 						pittoresques, plongez dans le cœur vibrant de la
 						capitale française
 					</h2>
@@ -45,7 +45,7 @@ const DiscoverNight = () => {
 					))}
 				</div>
 				<button className="bg-sky-900 px-4 py-2 mt-4 rounded-2xl text-white font-bold hover:bg-sky-800">
-					Voir plus d'incontournables
+					Voir plus d&apos;incontournables
 				</button>
 			</div>
 		</div>

@@ -8,14 +8,16 @@ const Event = ({ params }: { params: { id: string } }) => {
 			<h1 className="text-4xl font-bold text-center my-4">
 				{event?.title}
 			</h1>
-			<div className="relative h-[70vh]">
-				<Image
-					src={event?.image!}
-					alt={event?.title!}
-					fill
-					className="object-cover"
-				/>
-			</div>
+			{event?.image && (
+				<div className="relative h-[70vh]">
+					<Image
+						src={event.image}
+						alt={event.title}
+						fill
+						className="object-cover"
+					/>
+				</div>
+			)}
 			<p className="text-lg my-4 text-justify">{event?.description}</p>
 
 			<div className="mb-8">

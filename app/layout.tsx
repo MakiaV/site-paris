@@ -3,10 +3,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import "./globals.css";
 
-import { Lora, Montserrat, Playfair_Display } from "next/font/google";
-
-const playfair = Playfair_Display({ subsets: ["latin"] });
-const lora = Lora({ subsets: ["latin"] });
+import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 

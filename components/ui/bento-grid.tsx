@@ -3,7 +3,6 @@ import { cn } from "@/lib/utils";
 export const BentoGrid = ({
 	className,
 	children,
-	theme,
 }: {
 	className?: string;
 	children?: React.ReactNode;

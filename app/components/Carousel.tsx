@@ -13,9 +13,7 @@ import {
 
 import img1 from "@/app/images/1.jpg";
 import img2 from "@/app/images/2.jpg";
-import img3 from "@/app/images/3.jpg";
 import img4 from "@/app/images/4.jpg";
-import img5 from "@/app/images/5.jpg";
 
 import Image from "next/image";
 import Link from "next/link";

@@ -16,7 +16,7 @@ const Footer = () => {
 
 				<span className="-ml-2">ARIS</span>
 
-				<span className="ml-4">je t'aime</span>
+				<span className="ml-4">je t&apos;aime</span>
 			</div>
 			<div className="text-white font-bold flex gap-x-2">
 				<p>© 2024 Made With</p>
