@@ -42,16 +42,7 @@ const MyCarousel = () => {
 			link: "/events",
 			linkText: "Evénements",
 		},
-		{
-			id: 3,
-			name: "image 3",
-			src: img3,
-			title: "Infinies Possibilités de Découvertes",
-			subtitle:
-				"Des monuments iconiques aux activités insolites, explorez les mille et une facettes de la capitale",
-			link: "/todos",
-			linkText: "À faire",
-		},
+
 		{
 			id: 4,
 			name: "image 4",
@@ -61,16 +52,6 @@ const MyCarousel = () => {
 				"Des bistrots traditionnels aux tables étoilées, découvrez les saveurs authentiques et innovantes de la gastronomie parisienne",
 			link: "/eat-and-drink",
 			linkText: "Manger et boire",
-		},
-		{
-			id: 5,
-			name: "image 5",
-			src: img5,
-			title: "Trouvez Votre Havre de Paix",
-			subtitle:
-				"Des hôtels de charme aux adresses luxueuses, explorez les meilleurs quartiers pour un séjour inoubliable",
-			link: "/accommodation",
-			linkText: "Où sejourner",
 		},
 	];
 	const plugin = useRef(Autoplay({ delay: 4000, stopOnInteraction: true }));

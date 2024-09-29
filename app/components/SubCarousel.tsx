@@ -13,7 +13,6 @@ import {
 
 import img1 from "@/app/images/1.jpg";
 import img2 from "@/app/images/2.jpg";
-import img3 from "@/app/images/3.jpg";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -39,16 +38,6 @@ const SubCarousel = ({ theme }: { theme: "light" | "dark" }) => {
 				"Concerts, expositions, festivals... Vivez l'effervescence culturelle et artistique tout au long de l'année",
 			link: "/events",
 			linkText: "Evénements",
-		},
-		{
-			id: 3,
-			name: "image 3",
-			src: img3,
-			title: "Infinies Possibilités de Découvertes",
-			subtitle:
-				"Des monuments iconiques aux activités insolites, explorez les mille et une facettes de la capitale",
-			link: "/todos",
-			linkText: "À faire",
 		},
 	];
 	const plugin = useRef(Autoplay({ delay: 4000, stopOnInteraction: true }));

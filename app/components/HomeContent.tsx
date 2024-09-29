@@ -7,7 +7,7 @@ import SubCarousel from "./SubCarousel";
 
 const HomeContent = ({ theme }: { theme: "light" | "dark" }) => {
 	return (
-		<div className="px-24 2xl:px-48 py-12">
+		<div className="px-24 2xl:px-48 py-12 2xl:pt-48">
 			<div
 				className={
 					theme === "light"
@@ -39,7 +39,7 @@ const HomeContent = ({ theme }: { theme: "light" | "dark" }) => {
 						photographie​.
 					</p>
 					<Link
-						href="/events"
+						href="/events/1"
 						className="z-40 text-white  bg-sky-950 rounded-md font-bold px-4 py-2 hover:bg-sky-700 transition-colors"
 					>
 						En savoir plus

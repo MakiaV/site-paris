@@ -1,9 +1,9 @@
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import Link from "next/link";
 
-import img1 from "@/app/images/1.jpg";
 import img2 from "@/app/images/2.jpg";
 import img3 from "@/app/images/3.jpg";
+import img1 from "@/app/images/gastro.jpg";
 
 import Image, { StaticImageData } from "next/image";
 
@@ -11,17 +11,16 @@ const MyGrid = ({ theme }: { theme: "light" | "dark" }) => {
 	return (
 		<BentoGrid className="w-full" theme={theme}>
 			{items.map((item, i) => (
-				<Link key={i} href={item.link} className="">
+				<Link
+					key={i}
+					href={theme === "light" ? item.link : "/night" + item.link}
+				>
 					<BentoGridItem
 						key={i}
 						title={item.title}
 						description={item.description}
 						header={item.header}
 						theme={theme}
-
-						// className="border border-blue-500"
-
-						// className={i === 3 || i === 6 ? "md:col-span-2" : ""}
 					/>
 				</Link>
 			))}
@@ -40,26 +39,26 @@ const Skeleton = ({ src }: { src: StaticImageData }) => (
 );
 const items = [
 	{
-		title: "The Dawn of Innovation",
+		title: "Gastronomie",
 		description:
-			"Explore the birth of groundbreaking ideas and inventions.",
+			"Découvrez les dernières tendances de la street food parisienne",
 		header: <Skeleton src={img1} />,
-
-		link: "/accommodation",
-	},
-	{
-		title: "The Digital Revolution",
-		description: "Dive into the transformative power of technology.",
-		header: <Skeleton src={img2} />,
 
 		link: "/eat-and-drink",
 	},
 	{
-		title: "The Art of Design",
-		description: "Discover the beauty of thoughtful and functional design.",
+		title: "Events",
+		description: "Retrouvez les indispensables",
+		header: <Skeleton src={img2} />,
+
+		link: "/events/2",
+	},
+	{
+		title: "Plus de découvertes à Paris.",
+		description: "The place to Be",
 		header: <Skeleton src={img3} />,
 
-		link: "/night",
+		link: "/discover",
 	},
 ];
 
