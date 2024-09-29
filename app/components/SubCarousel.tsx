@@ -78,7 +78,11 @@ const SubCarousel = ({ theme }: { theme: "light" | "dark" }) => {
 									{item.subtitle}
 								</p>
 								<Link
-									href={item.link}
+									href={
+										theme === "light"
+											? item.link
+											: "/night" + item.link
+									}
 									className="text-xl text-white text-center font-bold text-primary bg-sky-950 hover:bg-sky-950/90 rounded-md px-4 py-2"
 								>
 									{item.linkText}
