@@ -52,14 +52,13 @@ const SubCarousel = ({ theme }: { theme: "light" | "dark" }) => {
 			<CarouselContent className="">
 				{gallery.map((item) => (
 					<CarouselItem key={item.id}>
-						<div className="grid grid-cols-2 h-[400px] rounded-xl border border-neutral-200">
-							<div className="relative">
+						{/* <div className="grid grid-cols-2 h-[400px] rounded-xl border border-neutral-200"> */}
+						<div className="grid grid-cols-1 md:grid-cols-2 md:h-[400px]">
+							<div className="relative h-[200px] md:h-[400px]">
 								<Image
 									className="object-cover rounded-l-xl"
 									src={item.src}
 									alt={item.name}
-									quality={100}
-									priority
 									fill
 								/>
 							</div>
@@ -71,12 +70,19 @@ const SubCarousel = ({ theme }: { theme: "light" | "dark" }) => {
 										: "flex flex-col justify-center px-8 space-y-8"
 								}
 							>
+								<h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">
+									{item.title}
+								</h1>
+								<p className="text-md md:text-lg lg:text-xl">
+									{item.subtitle}
+								</p>
+								{/* 
 								<h1 className="text-3xl font-bold">
 									{item.title}
 								</h1>
 								<p className="text-justify text-lg">
 									{item.subtitle}
-								</p>
+								</p> */}
 								<Link
 									href={
 										theme === "light"
@@ -92,8 +98,11 @@ const SubCarousel = ({ theme }: { theme: "light" | "dark" }) => {
 					</CarouselItem>
 				))}
 			</CarouselContent>
-			<CarouselPrevious className="w-14 h-14 translate-y-56 translate-x-[40vw] 2xl:translate-x-[39vw] border border-sky-400/30" />
-			<CarouselNext className="w-14 h-14 translate-y-56 -translate-x-[40vw] 2xl:-translate-x-[39vw] border border-sky-400/30" />
+			<CarouselPrevious className="w-10 h-10 md:w-14 md:h-14 translate-y-40 md:translate-y-56" />
+			<CarouselNext className="w-10 h-10 md:w-14 md:h-14 translate-y-40 md:translate-y-56" />
+
+			{/* <CarouselPrevious className="w-14 h-14 translate-y-56 translate-x-[40vw] 2xl:translate-x-[39vw] border border-sky-400/30" />
+			<CarouselNext className="w-14 h-14 translate-y-56 -translate-x-[40vw] 2xl:-translate-x-[39vw] border border-sky-400/30" /> */}
 		</Carousel>
 	);
 };

@@ -4,21 +4,21 @@ import { MyTypewriterEffect } from "./parisNight/MyTypeWriter";
 
 const MyVideoPlayer = () => {
 	return (
-		<div className="h-[100vh] w-[100vw] relative">
+		<div className="relative h-[300px] lg:h-[100vh] w-[100vw]">
 			<ReactPlayer
-				// url="https://www.youtube.com/watch?v=REDVbTQxMXo"
 				url="https://www.youtube.com/watch?v=wbVdswcyl6I"
-				// url="https://vimeo.com/510729330"
 				controls={false}
 				muted
 				playing
 				loop
-				width="100vw"
-				// height="100vh"
-				height="56vw"
-				className="pointer-events-none top-0 left-0 absolute p-0"
+				width="100%"
+				height="100%"
+				className="absolute top-0 left-0 pointer-events-none"
 			/>
-			<MyTypewriterEffect />
+			{/* Typewriter effect over the video */}
+			<div className="absolute top-0 left-0 w-full h-full flex items-center justify-center z-10">
+				<MyTypewriterEffect />
+			</div>
 		</div>
 	);
 };

@@ -77,10 +77,13 @@ const MyCarousel = () => {
 						/>
 						<div className="absolute w-full h-full  top-0 left-0 bg-black/40"></div>
 						<div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center  text-white">
-							<h1 className="text-7xl font-bold">{item.title}</h1>
-							<p className="text-xl font-semibold my-4">
+							<h1 className="text-4xl md:text-5xl lg:text-7xl font-bold">
+								{item.title}
+							</h1>
+							<p className="text-lg md:text-xl lg:text-2xl font-semibold my-4">
 								{item.subtitle}
 							</p>
+
 							<Link
 								href={item.link}
 								className="z-40  bg-sky-950/90 rounded-md font-bold px-4 py-2 hover:bg-sky-950/60 transition-colors"

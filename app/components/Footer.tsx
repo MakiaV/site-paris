@@ -8,8 +8,8 @@ import Image from "next/image";
 
 const Footer = () => {
 	return (
-		<div className="flex items-center justify-between 2xl:px-48 px-24 py-12 bg-sky-900">
-			<div className="flex text-white font-bold bg-sky-700 rounded-xl px-4 py-2  items-center justify-center">
+		<div className="flex flex-col items-center gap-y-4 2xl:px-48 px-4 py-12 bg-sky-900">
+			<div className="flex text-white font-bold bg-sky-700 rounded-xl px-4 py-2  items-center justify-center w-fit">
 				<span className="-mr-2">P</span>
 
 				<Image src={logo} alt="logo" width={40} height={40} />
