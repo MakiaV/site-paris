@@ -9,7 +9,7 @@ const Event = ({ params }: { params: { id: string } }) => {
 			<div className="text-center py-24">
 				<h1 className="text-4xl font-bold">Event not found</h1>
 				<p className="text-lg">
-					The event you're looking for doesn't exist.
+					L&apos;event que vous cherchez n&apos;existe pas
 				</p>
 			</div>
 		);
