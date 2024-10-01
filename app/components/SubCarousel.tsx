@@ -49,10 +49,9 @@ const SubCarousel = ({ theme }: { theme: "light" | "dark" }) => {
 			onMouseEnter={plugin.current.stop}
 			onMouseLeave={plugin.current.reset}
 		>
-			<CarouselContent className="">
+			<CarouselContent>
 				{gallery.map((item) => (
 					<CarouselItem key={item.id}>
-						{/* <div className="grid grid-cols-2 h-[400px] rounded-xl border border-neutral-200"> */}
 						<div className="grid grid-cols-1 md:grid-cols-2 md:h-[400px]">
 							<div className="relative h-[200px] md:h-[400px]">
 								<Image
@@ -60,6 +59,7 @@ const SubCarousel = ({ theme }: { theme: "light" | "dark" }) => {
 									src={item.src}
 									alt={item.name}
 									fill
+									loading="lazy"
 								/>
 							</div>
 
@@ -76,20 +76,14 @@ const SubCarousel = ({ theme }: { theme: "light" | "dark" }) => {
 								<p className="text-md md:text-lg lg:text-xl">
 									{item.subtitle}
 								</p>
-								{/* 
-								<h1 className="text-3xl font-bold">
-									{item.title}
-								</h1>
-								<p className="text-justify text-lg">
-									{item.subtitle}
-								</p> */}
+
 								<Link
 									href={
 										theme === "light"
 											? item.link
 											: "/night" + item.link
 									}
-									className="text-xl text-white text-center font-bold text-primary bg-sky-950 hover:bg-sky-950/90 rounded-md px-4 py-2"
+									className=" text-white text-center font-bold text-primary bg-sky-950 hover:bg-sky-950/90 rounded-md px-4 py-2"
 								>
 									{item.linkText}
 								</Link>
@@ -100,9 +94,6 @@ const SubCarousel = ({ theme }: { theme: "light" | "dark" }) => {
 			</CarouselContent>
 			<CarouselPrevious className="w-10 h-10 md:w-14 md:h-14 translate-y-40 md:translate-y-56" />
 			<CarouselNext className="w-10 h-10 md:w-14 md:h-14 translate-y-40 md:translate-y-56" />
-
-			{/* <CarouselPrevious className="w-14 h-14 translate-y-56 translate-x-[40vw] 2xl:translate-x-[39vw] border border-sky-400/30" />
-			<CarouselNext className="w-14 h-14 translate-y-56 -translate-x-[40vw] 2xl:-translate-x-[39vw] border border-sky-400/30" /> */}
 		</Carousel>
 	);
 };

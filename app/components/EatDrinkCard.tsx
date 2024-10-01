@@ -15,7 +15,7 @@ const EatDrinkCard = ({ title, description, image, badges, theme }: Props) => {
 		<div
 			className={
 				theme === "dark"
-					? "border border-neutral-700"
+					? "border border-neutral-700 cursor-pointer"
 					: "shadow-xl rounded-lg cursor-pointer"
 			}
 		>

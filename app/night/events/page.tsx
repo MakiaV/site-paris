@@ -17,7 +17,7 @@ const EventsNight = () => {
 					Événements
 				</h1>
 			</div>
-			<div className="grid grid-cols-3 gap-4 px-24 my-12 2xl:px-48">
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-12 lg:px-24 my-12 2xl:px-48">
 				{eventsData.map((event) => (
 					<EventCard
 						key={event.id}
